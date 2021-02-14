@@ -13,7 +13,8 @@
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/lib/tsconfig.lib.json",
-            "project": "projects/lib/ng-package.json"
+            "project": "projects/lib/ng-package.json",
+            "assets": "projects/lib/src/assets"
           },
           "configurations": {
             "production": {
@@ -42,9 +43,15 @@
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
     "analytics": "842ff27c-38f7-4b8a-894f-226541092dc7"
   },
-  "defaultProject": "lib"
+  "defaultProject": "lib",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

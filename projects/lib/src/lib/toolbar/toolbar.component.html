@@ -1,12 +1,32 @@
 <mat-toolbar class="teste">
-    <mat-toolbar-row>
-        <span>{{title}}</span>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-            <mat-icon>favorite</mat-icon>
-        </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-            <mat-icon>share</mat-icon>
-        </button>
-    </mat-toolbar-row>
+
+  <mat-toolbar-row>
+
+    <img src="../../assets/angular-icone.png" alt="">
+    <span>{{title}}</span>
+
+    <span class="example-spacer"></span>
+
+    <mat-form-field>
+      <mat-label>Pesquisar</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <span class="example-spacer"></span>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <p class="example-spacer">Home</p> <p class="example-spacer">Tela1</p> <p class="example-spacer">Tela2</p> <p class="example-spacer">Tela3</p> <p class="example-spacer">AdminPainel</p>
+  </mat-toolbar-row>
+
 </mat-toolbar>
