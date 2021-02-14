@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './toolbar.component';
@@ -14,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     MatButtonModule,
     MatInputModule,
+    RouterModule
   ],
   exports: [ToolbarComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

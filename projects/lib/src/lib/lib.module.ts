@@ -8,9 +8,10 @@ import { LibComponent } from './lib.component';
 @NgModule({
   declarations: [LibComponent],
   imports: [
-
+    GridMenuModule,
+    ToolbarModule
   ],
-  exports: [LibComponent],
+  exports: [LibComponent, ToolbarModule, GridMenuModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LibModule { }

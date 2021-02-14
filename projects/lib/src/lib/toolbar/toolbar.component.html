@@ -27,6 +27,9 @@
 
   <mat-toolbar-row>
     <p class="example-spacer">Home</p> <p class="example-spacer">Tela1</p> <p class="example-spacer">Tela2</p> <p class="example-spacer">Tela3</p> <p class="example-spacer">AdminPainel</p>
+    <p *ngFor="let pagina of paginas" class="example-spacer">
+      <a [routerLink]="pagina.link">{{pagina.titulo}}</a>
+    </p>
   </mat-toolbar-row>
 
 </mat-toolbar>
